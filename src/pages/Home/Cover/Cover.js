@@ -19,7 +19,7 @@ export const Cover = () => {
                <div className="js-hero-right hero-container">
                   <img src={heroNova} alt="Nova" />
                </div>
-               <div className="slogan">
+               <div className="js-slogan">
                   <div className="slogan-text-section">
                      <div className="slogan-text-container">
                         <h1 className="js-slogan-slide-up">

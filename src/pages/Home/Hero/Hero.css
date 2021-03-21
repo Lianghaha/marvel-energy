@@ -7,7 +7,6 @@
    overflow: hidden;
 }
 
-
 .hero .left-section,
 .hero .right-section {
    /*! Change In Media Query */
@@ -16,18 +15,26 @@
    flex-wrap: wrap;
    justify-content: center;
    align-items: center;
+}
+
+.hero-1 .right-section,
+.hero-3 .right-section {
    /*! Change In Media Query */
-   margin-top: 3vh;
+   order: -1;
 }
 
 .hero .hero-img-container {
-   /*! Change In Media Query */
-   width: 60%;
+   height: 100%;
+   display: flex;
+   /*! Change In Media Query - Adjust hero-img size*/
+   align-items: flex-end;
 }
 
 .hero .hero-img-container img {
+   /*! Change In Media Query - Adjust hero-img size*/
+   height: 70%;
+   max-height: 760px;
    width: 100%;
-   height: 100%;
    object-fit: contain;
    animation-name: floating;
    animation-duration: 3s;
@@ -48,8 +55,6 @@
 .hero .info-container {
    color: white;
    width: 80%;
-   /*! Change In Media Query */
-   min-width: 260px;
 }
 
 .hero .info-container h3 {
@@ -70,14 +75,14 @@
 
 .hero .info-container h1 {
    margin-top: 2vh;
-   /*! Change In Media Query */
-   margin-right: 8%;
    font-family: var(--title-font);
    letter-spacing: 3px;
    font-size: 3em;
 }
 
 .hero .info-container .donate-button {
+   /*! Change In Media Query - Adjust hero-img size*/
+   margin-top: 6vh;
    width: 150px;
    display: flex;
    align-items: center;
@@ -104,8 +109,8 @@
    margin-right: 3%;
    margin-top: 1%;
    display: inline-block;
-   width: 30%;
-   max-width: 150px;
+   width: 22%;
+   max-width: 120px;
    transition: transform 0.3s ease-out;
 }
 
@@ -120,18 +125,7 @@
    border-radius: 5px;
 }
 
-.hero-1 .right-section,
-.hero-3 .right-section {
-   /*! Change In Media Query */
-   order: -1;
-}
-
-/*! Change In Media Query */
 @media (min-width: 768px) {
-   .hero .hero-img-container {
-      /*! Change In Media Query */
-      width: 40%;
-   }
 }
 
 @media (min-width: 1024px) {
@@ -140,22 +134,29 @@
 @media (min-width: 1366px) {
    .hero .left-section,
    .hero .right-section {
-      /*! Change In Media Query */
       width: 50%;
-      margin-top: 15vh;
    }
 
    .hero .hero-img-container {
-      width: auto;
-      height: 80%;
-      max-height: 760px;
    }
    .hero-1 .right-section,
    .hero-3 .right-section {
       order: 0;
    }
-   .hero-1 .hero-img-container {
-      max-height: 830px;
+
+   .hero .hero-img-container {
+      /*! Change In Media Query - Adjust hero-img size*/
+      align-items: center;
+   }
+
+   .hero .hero-img-container img {
+      /*! Change In Media Query - Adjust hero-img size*/
+      height: 75%;
+   }
+
+   .hero .info-container .donate-button {
+      /*! Change In Media Query - Adjust hero-img size*/
+      margin-top: 3vh;
    }
 }
 

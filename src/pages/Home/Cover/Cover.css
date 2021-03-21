@@ -70,7 +70,7 @@
    transform: rotate(10deg);
 }
 
-.cover .heros-img .slogan {
+.cover .heros-img .js-slogan {
    height: 50%;
    width: 100%;
    z-index: 2;
@@ -118,18 +118,18 @@
    margin-bottom: 70px;
 }
 
-.cover .slogan h1 {
+.cover .js-slogan h1 {
    font-family: var(--title-font);
    letter-spacing: 7px;
    font-size: 1.5em;
 }
 
-.cover .slogan h1 .delete {
+.cover .js-slogan h1 .delete {
    text-decoration: line-through;
    color: var(--marvel-red);
 }
 
-.cover .slogan h1 .energy {
+.cover .js-slogan h1 .energy {
    font-size: 1.8em;
    color: var(--main-blue);
 }

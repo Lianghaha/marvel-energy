@@ -24,7 +24,7 @@ export const Hero = (props) => {
             <div className="hero-events text-section">
                <h3 className="js-hero-slide-in">
                   More Events About Me
-                  <span>(From Marvel API, Images Clickable)</span>
+                  <span> (From Marvel API, Images Clickable)</span>
                </h3>
             </div>
             <div className="js-events-container">

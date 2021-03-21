@@ -7,20 +7,20 @@ const heroAnimation = () => {
       gsap
          .timeline({
             scrollTrigger: {
-               trigger: ".hero-" + i + " .info-container",
-               start: "top 50%",
-               markers: true,
+               trigger: `.hero-${i} .info-container`,
+               start: "-20px 50%",
+               // markers: true,
             },
          })
-         .from(".hero-" + i + " .info-container .js-hero-slide-in", {
+         .from(`.hero-${i} .info-container .js-hero-slide-in`, {
             stagger: 0.2,
             marginLeft: "-500px",
-            duration: 1,
+            duration: 0.7,
             opacity: 0,
             ease: Power3.easeOut,
          })
          .from(
-            ".hero-" + i + " .js-events-container",
+            `.hero-${i} .js-events-container`,
             {
                // scrollTrigger: {
                //    trigger: ".hero-1 .js-events-container",
@@ -32,14 +32,14 @@ const heroAnimation = () => {
                opacity: 0,
                ease: Power3.easeOut,
             },
-            "-=0.8"
+            "-=0.5"
          )
 
-      gsap.from(".hero-" + i + " .hero-img-container", {
+      gsap.from(`.hero-${i} .hero-img-container`, {
          scrollTrigger: {
-            trigger: ".hero-" + i + " .hero-img-container",
-            start: "-100px 50%",
-            markers: true,
+            trigger: `.hero-${i} .hero-img-container`,
+            start: "5% 50%",
+            // markers: true,
          },
          duration: 1,
          opacity: 0,

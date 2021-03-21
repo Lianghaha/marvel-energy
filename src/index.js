@@ -7,7 +7,7 @@ import { Home } from "./pages/Home/Home"
 import backgroundVideo from "./media/video/background-video.mp4"
 
 function App() {
-   const [loader, setLoader] = useState(false)
+   const [loader, setLoader] = useState(true)
    return (
       <Router>
          <video className="videoTag" autoPlay loop muted>
@@ -19,7 +19,10 @@ function App() {
             ) : (
                <Switch>
                   {/* <Route path="/projects" exact render={} /> */}
-                  <Route path="/" render={() => <Home />} />
+                  <Route
+                     path="/"
+                     render={() => <Home setLoader={setLoader} />}
+                  />
                </Switch>
             )}
          </div>

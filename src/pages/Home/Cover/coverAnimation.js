@@ -1,4 +1,4 @@
-import { gsap, Elastic, Bounce, Power4, Power3 } from "gsap"
+import { gsap, Bounce, Power3 } from "gsap"
 
 const coverAnimation = () => {
    gsap
@@ -6,6 +6,10 @@ const coverAnimation = () => {
       .from(".js-logo-container", {
          opacity: 0,
          scale: 0.01,
+         duration: 0.5,
+      })
+      .from(".js-slogan", {
+         opacity: 0,
          duration: 0.5,
       })
       .from(
@@ -17,7 +21,7 @@ const coverAnimation = () => {
             marginLeft: "80px",
             ease: Power3.easeOut,
          },
-         "-=0"
+         "-=0.3"
       )
       .from(
          ".js-hero-right",
@@ -61,6 +65,10 @@ const coverAnimation = () => {
          },
          "-=0.3"
       )
+      .from(".App", {
+         backgroundColor: "#000000",
+         duration: 0.1,
+      })
 }
 
 export { coverAnimation }

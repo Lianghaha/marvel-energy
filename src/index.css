@@ -22,7 +22,7 @@ video {
 
 .App {
    min-height: 100vh;
-   background-color: #000000cc;
+   background-color: #000000c2;
    overflow: hidden;
    font-family: var(--main-font);
    font-size: 12px;
