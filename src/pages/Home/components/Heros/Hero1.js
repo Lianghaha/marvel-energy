@@ -33,9 +33,11 @@ export const Hero1 = (props) => {
                   </div>
                   <div className="hero-events text-section">
                      <h3 className="js-hero-left-slide-in">
-                        More Events About Me <span>(From Marvel API, Images Clickable)</span>
+                        More Events About Me{" "}
+                        <span>(From Marvel API, Images Clickable)</span>
                      </h3>
                      <div className="js-events-container">
+                        {console.log(thorData)}
                         {thorData
                            ? thorData.map((item) => {
                                 return (

@@ -5,3 +5,8 @@
    align-content: flex-start;
    padding-bottom: 500px;
 }
+.home .hero-1,
+.home .hero-2,
+.home .hero-3 {
+   width: 100%;
+}

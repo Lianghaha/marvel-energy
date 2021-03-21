@@ -7,8 +7,6 @@
    overflow: hidden;
 }
 
-.hero .content {
-}
 
 .hero .left-section,
 .hero .right-section {
@@ -122,6 +120,12 @@
    border-radius: 5px;
 }
 
+.hero-1 .right-section,
+.hero-3 .right-section {
+   /*! Change In Media Query */
+   order: -1;
+}
+
 /*! Change In Media Query */
 @media (min-width: 768px) {
    .hero .hero-img-container {
@@ -145,6 +149,13 @@
       width: auto;
       height: 80%;
       max-height: 760px;
+   }
+   .hero-1 .right-section,
+   .hero-3 .right-section {
+      order: 0;
+   }
+   .hero-1 .hero-img-container {
+      max-height: 830px;
    }
 }
 
