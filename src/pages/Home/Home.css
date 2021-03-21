@@ -1,0 +1,7 @@
+.home {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: flex-start;
+   padding-bottom: 500px;
+}

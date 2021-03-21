@@ -1,13 +1,84 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* font-family: 'Bangers', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+/* font-family: 'Marvel', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Marvel:wght@400;700&display=swap");
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   --main-blue: #00cafd;
+   --marvel-red: #ed1d24;
+   --title-font: "Bangers", cursive;
+   --main-font: "Marvel", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+video {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: -1;
 }
+
+.App {
+   min-height: 100vh;
+   background-color: #000000cc;
+   overflow: hidden;
+   font-family: var(--main-font);
+   font-size: 12px;
+}
+
+.App .content {
+   /*! Change In Media Query */
+   width: 88%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+   .App .content {
+      width: 85%;
+   }
+   .App {
+      font-size: 16px;
+   }
+}
+
+@media (min-width: 1024px) {
+   .App {
+      font-size: 18px;
+   }
+}
+
+@media (min-width: 1366px) {
+   .App .content {
+      width: 80%;
+   }
+}
+
+@media (min-width: 1920px) {
+   .App {
+      font-size: 20px;
+   }
+}
+
+@media (max-width: 400px) {
+   .App {
+      font-size: 10px;
+   }
+}
+
+/*! Change In Media Query */
+/* @media (min-width: 768px) {
+}
+
+@media (min-width: 1366px) {
+}
+
+@media (min-width: 1920px) {
+}
+
+@media (max-width: 400px) {
+} */

@@ -1,0 +1,42 @@
+.js-logo-container {
+   height: 1.6em;
+   display: flex;
+   font-family: var(--title-font);
+   letter-spacing: 3px;
+}
+
+.js-logo-container .js-logo-left,
+.js-logo-container .js-logo-right {
+   width: 50%;
+   height: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   color: #ffffff;
+}
+
+.js-logo-container .js-logo-left {
+   justify-content: center;
+   color: red;
+   background-color: grey;
+   margin-right: 0.2em;
+}
+
+.js-logo-container .js-logo-left p {
+   margin: 0 0.3em;
+}
+
+.js-logo-container .js-logo-right {
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.js-logo-container .js-logo-right .line {
+   width: 100%;
+   height: 0.1em;
+   background-color: #ffffff;
+}
+
+.js-logo-container .js-logo-right .letters-container {
+   display: flex;
+}

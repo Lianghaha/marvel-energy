@@ -1,0 +1,26 @@
+.navbar {
+   width: 100%;
+   height: 10vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+}
+
+.navbar .content {
+   align-items: center;
+}
+
+.navbar .js-logo-container {
+   font-size: 2.3em;
+}
+
+.navbar .temp-logo-container {
+   height: 60%;
+}
+
+.navbar .temp-logo-container img {
+   height: 100%;
+   width: 100%;
+   object-fit: contain;
+}
