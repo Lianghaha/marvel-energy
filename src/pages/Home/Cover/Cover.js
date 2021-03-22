@@ -13,9 +13,9 @@ export const Cover = (props) => {
       <div className="cover">
          <div className="content">
             <div className="heros-img">
-               {/* <div className="thank-container">
+               <div className="thank-container">
                   <img src={thankImg} alt="thank" />
-               </div> */}
+               </div>
                <div className="js-hero-left hero-container">
                   <img src={heroMagneto} alt="Magneto" />
                </div>

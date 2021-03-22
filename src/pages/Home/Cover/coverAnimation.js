@@ -1,6 +1,32 @@
 import { gsap, Bounce, Power3 } from "gsap";
 
+const hoverIn = () => {
+   gsap.to(".hero-container", {
+      opacity: 0,
+      duration: 0.5,
+   });
+   gsap.to(".thank-container", {
+      opacity: 1,
+      duration: 0.5,
+   });
+};
+
+const hoverOut = () => {
+   gsap.to(".hero-container", {
+      opacity: 1,
+      duration: 0.5,
+   });
+   gsap.to(".thank-container", {
+      opacity: 0,
+      duration: 0.5,
+   });
+};
+
 const coverAnimation = () => {
+   const coverDonateButton = document.querySelector(".cover .donate-button");
+   coverDonateButton.addEventListener("mouseover", hoverIn);
+   coverDonateButton.addEventListener("mouseleave", hoverOut);
+
    gsap
       .timeline()
       .from(".js-logo-container", {

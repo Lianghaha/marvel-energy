@@ -2,8 +2,8 @@ import thorImg from "../../../media/image/hero-Thor.png";
 import novaImg from "../../../media/image/hero-Nova.png";
 import magnetoImg from "../../../media/image/hero-Magneto.png";
 
-const PRIV_KEY = "7b319d3d32369f9f371fb81fab74b64c38798d93";
-const PUBLIC_KEY = "823224ced84111af4a558ea73868628b";
+const PRIV_KEY = "3c67f8b735de0e4e20a1798635bd0c5393e51876";
+const PUBLIC_KEY = "12656036620a64d066126a719af51c2b";
 
 const thorInfo = {
    id: 1009664,

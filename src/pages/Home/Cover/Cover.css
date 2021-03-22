@@ -27,7 +27,9 @@
 }
 
 .cover .thank-container {
+   opacity: 0;
    height: 100%;
+   position: absolute;
 }
 .cover .thank-container img {
    height: 85%;

@@ -54,7 +54,11 @@ export const Hero = (props) => {
    const heroImgContainer = () => {
       return (
          <div className="hero-img-container">
-            <img src={info.image ? info.image : ""} alt="hero-img" />
+            <img
+               className="hero-img"
+               src={info.image ? info.image : ""}
+               alt="hero-img"
+            />
          </div>
       );
    };
