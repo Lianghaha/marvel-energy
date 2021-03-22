@@ -1,4 +1,4 @@
-import { gsap, Bounce, Power3 } from "gsap"
+import { gsap, Bounce, Power3 } from "gsap";
 
 const coverAnimation = () => {
    gsap
@@ -16,7 +16,7 @@ const coverAnimation = () => {
          ".js-hero-left",
          {
             opacity: 0,
-            duration: 1,
+            duration: 0.8,
             marginBottom: "-80px",
             marginLeft: "80px",
             ease: Power3.easeOut,
@@ -27,7 +27,7 @@ const coverAnimation = () => {
          ".js-hero-right",
          {
             opacity: 0,
-            duration: 1,
+            duration: 0.8,
             marginBottom: "-80px",
             marginLeft: "-80px",
             ease: Power3.easeOut,
@@ -38,7 +38,7 @@ const coverAnimation = () => {
          ".js-hero-middle",
          {
             opacity: 0,
-            duration: 1,
+            duration: 0.8,
             marginBottom: "-80px",
             ease: Power3.easeOut,
          },
@@ -49,7 +49,7 @@ const coverAnimation = () => {
          {
             opacity: 0,
             stagger: 0.2,
-            duration: 0.8,
+            duration: 0.6,
             y: "30px",
             ease: Power3.easeOut,
          },
@@ -63,12 +63,16 @@ const coverAnimation = () => {
             marginTop: "-160px",
             ease: Bounce.easeOut,
          },
-         "-=0.3"
+         "-=0.5"
       )
-      .from(".App", {
-         backgroundColor: "#000000",
-         duration: 0.1,
-      })
-}
+      .from(
+         ".App",
+         {
+            backgroundColor: "#000000",
+            duration: 0.1,
+         },
+         "-=0.3"
+      );
+};
 
-export { coverAnimation }
+export { coverAnimation };

@@ -1,15 +1,20 @@
 /* font-family: 'Bangers', cursive; */
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
-/* font-family: 'Marvel', sans-serif; */
-@import url("https://fonts.googleapis.com/css2?family=Marvel:wght@400;700&display=swap");
+/* font-family: 'Titillium Web', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap");
+/* font-family: 'Teko', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap");
+
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   --main-blue: #00cafd;
+   --main-blue: #51dcff;
    --marvel-red: #ed1d24;
-   --title-font: "Bangers", cursive;
-   --main-font: "Marvel", sans-serif;
+   --main-font: "Titillium Web", sans-serif;
+   --title-font: "Captain", fantasy;
+   --logo-font: "Teko", sans-serif;
+   --marvel-font: "Marvel", fantasy;
 }
 
 video {
@@ -25,7 +30,7 @@ video {
    background-color: #000000c2;
    overflow: hidden;
    font-family: var(--main-font);
-   font-size: 12px;
+   font-size: 15px;
 }
 
 .App .content {
@@ -35,6 +40,16 @@ video {
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
+}
+
+.App h1 {
+   font-family: var(--title-font);
+}
+
+.App h3 {
+   font-family: var(--title-font);
+   font-weight: 500;
+   letter-spacing: 0.03em;
 }
 
 @media (min-width: 768px) {
@@ -66,7 +81,7 @@ video {
 
 @media (max-width: 400px) {
    .App {
-      font-size: 10px;
+      font-size: 12px;
    }
 }
 
@@ -82,3 +97,13 @@ video {
 
 @media (max-width: 400px) {
 } */
+
+@font-face {
+   font-family: "Captain";
+   src: url("./media/font/Captainmarvel-anm9.ttf") format("truetype");
+}
+
+@font-face {
+   font-family: "Marvel";
+   src: url("./media/font/Marvel.ttf") format("truetype");
+}

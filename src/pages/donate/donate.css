@@ -1,0 +1,188 @@
+.donate {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   font-family: var(--main-font);
+   --input-bg: #2a2a2a;
+   --text-color: #c3c3c3;
+   --placeholder-color: #8c8c8c;
+   --border-radius: 6px;
+   color: var(--placeholder-color);
+}
+
+.donate .content {
+   align-content: center;
+}
+
+.donate .section-container {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+}
+.donate .thank-section,
+.donate .form-section {
+   /*! Change In Media Query */
+   width: 100%;
+}
+
+.donate .thank-section {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+}
+
+.donate .logo-container {
+   width: 100%;
+   font-size: 5.3em;
+   margin-right: 50px;
+   margin-left: 50px;
+   display: flex;
+   justify-content: center;
+}
+
+.donate .thank-img-container {
+   /*! Change In Media Query */
+   display: none;
+   justify-content: center;
+   /*! Change In Media Query */
+   min-height: 12em;
+}
+
+.donate .thank-section img {
+   width: 90%;
+   max-width: 500px;
+   object-fit: contain;
+}
+
+.donate .form-section {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.donate .form-container {
+   width: 90%;
+   max-width: 500px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+}
+
+.donate input {
+   outline: none;
+   border: none;
+   background-color: var(--input-bg);
+   padding: 0.7em 0.8em;
+   font-size: 1.2em;
+   color: var(--text-color);
+   border-radius: var(--border-radius);
+}
+
+.donate .form-row {
+   width: 100%;
+   margin-bottom: 3vh;
+   display: flex;
+   justify-content: space-between;
+}
+
+.donate .name-email input {
+   width: 47%;
+}
+
+.donate .input-card {
+   width: 100%;
+}
+
+.donate .input-csc {
+   width: 3.8em;
+   margin-left: 6%;
+}
+
+.donate .amount {
+   height: 3.9em;
+}
+
+.donate .amount-box {
+   width: 22%;
+   height: 100%;
+   background-color: var(--input-bg);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.5em;
+   transition: background-color 0.3s, color 0.3s;
+   border-radius: var(--border-radius);
+   cursor: pointer;
+}
+
+.donate .active {
+   background-color: var(--marvel-red);
+   color: #ffffff;
+}
+
+.donate .comment textarea {
+   outline: none;
+   border: none;
+   min-width: 100%;
+   height: 15vh;
+   max-height: 15vh;
+   background-color: var(--input-bg);
+   padding: 0.8em;
+   font-size: 1.2em;
+   font-family: var(--main-font);
+   color: var(--text-color);
+   border-radius: var(--border-radius);
+}
+
+.donate .button-container {
+   margin: 0;
+}
+
+.donate .back-icon-container {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   cursor: pointer;
+}
+
+.donate .back-icon-container svg {
+   margin-left: -0.12em;
+   font-size: 2.6em;
+   color: #ffffff;
+}
+
+.donate .donate-button {
+   margin-left: auto;
+   color: var(--marvel-red);
+   border: 0.18em solid var(--marvel-red);
+}
+
+/*! Change In Media Query */
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1366px) {
+   .donate .thank-section,
+   .donate .form-section {
+      /*! Change In Media Query */
+      width: 50%;
+   }
+   .donate .thank-section {
+      order: 1;
+      margin-bottom: 10vh;
+   }
+   .donate .thank-img-container {
+      display: flex;
+      min-height: 15em;
+   }
+}
+
+@media (min-width: 1920px) {
+}
+
+@media (max-width: 400px) {
+}

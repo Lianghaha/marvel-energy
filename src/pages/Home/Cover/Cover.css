@@ -6,13 +6,11 @@
    flex-wrap: wrap;
    justify-content: center;
    align-content: flex-start;
-   /* background-color: cyan; */
 }
 
 .cover .content {
    flex-direction: column;
-   align-items: center;
-   justify-content: space-evenly;
+   justify-content: flex-start;
 }
 
 .cover .heros-img {
@@ -20,13 +18,22 @@
    max-height: 800px;
    width: 100%;
    /*! Change In Media Query */
-   margin-top: -6vh;
-   /* background-color: red; */
+   margin-top: 0vh;
    position: relative;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
    align-items: flex-end;
+}
+
+.cover .thank-container {
+   height: 100%;
+}
+.cover .thank-container img {
+   height: 85%;
+   max-width: 100%;
+   min-width: 260px;
+   object-fit: contain;
 }
 
 .cover .hero-container {
@@ -40,6 +47,7 @@
 .cover .hero-container img {
    height: 85%;
    max-width: 100%;
+   min-width: 260px;
    object-fit: contain;
 }
 
@@ -52,8 +60,6 @@
 }
 
 .cover .js-hero-middle {
-   /* height: 100%; */
-   max-width: 40%;
    z-index: 1;
    transform: translate(-50%, 0);
 }
@@ -77,13 +83,15 @@
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
-   font-size: 1.6em;
-   /* background-color: red; */
+   /*! Change In Media Query */
+   font-size: 1em;
 }
 
 .cover .slogan-text-section {
    height: 100%;
    width: 100%;
+   min-width: 430px;
+   padding: 0 60px;
    display: flex;
    justify-content: center;
    align-items: flex-end;
@@ -118,9 +126,13 @@
    margin-bottom: 70px;
 }
 
+.cover .js-slogan .cover-text {
+   margin: 5px 0;
+}
+
 .cover .js-slogan h1 {
-   font-family: var(--title-font);
-   letter-spacing: 7px;
+   letter-spacing: 0.08em;
+   /*! Change In Media Query */
    font-size: 1.5em;
 }
 
@@ -131,13 +143,23 @@
 
 .cover .js-slogan h1 .energy {
    font-size: 1.8em;
-   color: var(--main-blue);
+   background: url("../../../media/image/current.jpg");
+   background-size: cover;
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+}
+
+.cover .js-slogan p {
+   font-size: 0.88em;
 }
 
 .cover .slogan-under-cover {
    margin-top: -30px;
    width: 100%;
    height: 30%;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
    background: rgb(0, 0, 0);
    background: -moz-linear-gradient(
       180deg,
@@ -161,22 +183,23 @@
       rgba(0, 0, 0, 0) 100%
    );
    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+   /* background-color: red; */
+}
+
+.cover .slogan-under-cover .donate-button {
 }
 
 .cover .scroll-icon-container {
-   width: 10vh;
-   height: 10vh;
-   /* background-color: white; */
    display: flex;
    justify-content: center;
    align-items: center;
+   margin-top: 2vh;
 }
 
 .cover .js-scroll-icon {
    width: 35px;
    height: 60px;
-   /* box-shadow: inset 0 0 0 1px #fff; */
-   border: 3px solid #ffffff;
+   /* border: 3px solid #ffffff; */
    border-radius: 25px;
    display: flex;
    justify-content: center;
@@ -190,8 +213,8 @@
 
 .cover .js-scroll-icon svg {
    fill: var(--main-blue);
-   height: 35px;
-   width: 23px;
+   height: 50px;
+   width: 50px;
    animation-duration: 1.5s;
    animation-iteration-count: infinite;
    animation-name: scroll;
@@ -202,19 +225,25 @@
    }
    100% {
       opacity: 0;
-      transform: translateY(25px);
+      transform: translateY(50px);
    }
 }
 
 /*! Change In Media Query */
 @media (min-width: 768px) {
-   .cover .heros-img {
-      /* veritcal position of the hero-img   */
-      margin-top: 1vh;
+   .cover .heros-img .js-slogan {
+      font-size: 1.2em;
+   }
+   .cover .js-slogan h1 {
+      font-size: 1.8em;
    }
 }
 
 @media (min-width: 1366px) {
+   .cover .heros-img {
+      /* veritcal position of the hero-img */
+      margin-top: 5vh;
+   }
 }
 
 @media (min-width: 1920px) {

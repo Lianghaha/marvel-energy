@@ -8,6 +8,23 @@
 }
 
 .loader .js-logo-container {
-   font-size: 3.5em;
+   /*! Change In Media Query */
+   font-size: 5em;
    margin-bottom: 10vh;
+}
+
+/*! Change In Media Query */
+@media (min-width: 768px) {
+   .loader .js-logo-container {
+      font-size: 8em;
+   }
+}
+
+@media (min-width: 1366px) {
+}
+
+@media (min-width: 1920px) {
+}
+
+@media (max-width: 400px) {
 }

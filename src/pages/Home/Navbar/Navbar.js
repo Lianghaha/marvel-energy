@@ -1,13 +1,14 @@
-import React from "react"
-import "./Navbar.css"
-import { Logo } from "../../../lib/components/Logo"
+import React from "react";
+import "./navbar.css";
+import { Logo } from "../../../lib/components/logo/logo";
 
-export const Navbar = () => {
+export const Navbar = (props) => {
+   const { setLoader } = props;
    return (
       <div className="navbar">
          <div className="content">
-            <Logo />
+            <Logo setLoader={setLoader} />
          </div>
       </div>
-   )
-}
+   );
+};

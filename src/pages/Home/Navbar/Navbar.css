@@ -9,10 +9,11 @@
 
 .navbar .content {
    align-items: center;
+   justify-content: flex-start;
 }
 
 .navbar .js-logo-container {
-   font-size: 2.3em;
+   font-size: 2.6em;
 }
 
 .navbar .temp-logo-container {

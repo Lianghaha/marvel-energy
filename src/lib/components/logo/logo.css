@@ -1,0 +1,60 @@
+.js-logo-container {
+   height: 1.6em;
+   width: fit-content;
+   padding: 0 10px;
+   display: flex;
+   font-family: var(--marvel-font);
+   text-decoration: none;
+}
+
+.js-logo-container .js-logo-left,
+.js-logo-container .js-logo-right {
+   width: fit-content;
+   height: 100%;
+   display: flex;
+   align-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   align-items: center;
+   color: #ffffff;
+}
+
+.js-logo-container .js-logo-left {
+   margin-right: 0.15em;
+}
+
+.js-logo-container .logo-background {
+   background-color: red;
+   padding: 0.06em 0.2em;
+   display: flex;
+}
+
+.js-logo-container .js-logo-left p {
+   text-align: center;
+   margin-bottom: -0.19em;
+   line-height: 1.12em;
+}
+
+.js-logo-container .js-logo-right {
+   color: var(--marvel-red);
+}
+
+.js-logo-container .js-logo-right p {
+   font-family: var(--logo-font);
+   font-weight: 300;
+   line-height: 1.12em;
+   margin-bottom: -0.18em;
+   margin-top: -0.03em;
+   letter-spacing: -0.02em;
+}
+
+.js-logo-container .js-logo-right .line {
+   width: 100%;
+   height: 0.07em;
+   background-color: var(--marvel-red);
+}
+
+.js-logo-container .js-logo-right .letters-container {
+   display: flex;
+   margin-left: -0.03em;
+}
